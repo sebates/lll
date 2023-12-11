@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  background-color: white ;
+
+}
+
+button {
+  cursor: pointer;
+}
+
+.main {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.heading {
+  font-style: italic;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  margin: 0;
+  width: 100%;
+  font-size: 32px;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs button {
+  border: none;
+  font-size: 32px;
+  height: 64px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.current {
+  background-color: black;
+  color: white;
+}
+
+.other:hover {
+  background-color: lightgray;
+}
+
+/* Search Bar */
+/* I have no idea how I got this to work and whenever I change something it breaks */
+
+.search {
+  display: flex;
+  width: 100%;
+}
+
+.search form input[type=text] {
+  width: 100%;
+  padding: 1%;
+}
+
+.search form {
+  display: flex;
+  width: 100%;
+}
+
+.filters {
+  width: 10%;
+}
+
+/* Accordion */
+
+.accordion {
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  width: 100%;
+  padding: 2%;
+}
+
+.accordion::after {
+  float: right;
+  content: "\02C5";
+}
+
+.active:after {
+  content: "\02C4";
+}
+
+.active, .accordion:hover {
+  background-color: lightgray;
+}
+
+.panel {
+  display: flex;
+  background-color: white;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+}
+
+img {
+  width: 640px;
+}
+
+.info {
+  margin-left: 1%;
+}
+
+.main {
+  background-color: white;
+}
+
+.welcome p {
+  margin: 5%;
+}
